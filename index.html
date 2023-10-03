@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot and Cold Game</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hot and Cold</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hot and Cold Game</h1>
+    <h1>Hot and Cold</h1>
     <h2>Objective: You have limited turns to guess a secret number, starting at 50. You will be informed how close you are based on Hot and Cold. 
         If you get the answer within five guesses, you win. Otherwise, you lose. 
         <br>
@@ -21,9 +21,13 @@
     <p>Current Guess: <span id="currentGuess">50</span></p>
     </div>
 
-
     <!--buttons-->
-    <div class="buttons">
+<div id="commit-reset">
+    <button id="commit">Commit</button>
+    <button id="reset">Reset</button>
+</div>
+
+
 <div class="column">
         <div class="add-buttons">
     <button id="add1">+1</button>
@@ -40,7 +44,6 @@
     <button id="sub10">-10</button>
     <button id="sub25">-25</button>
     </div>
-</div>
 
     <!--log-->
     <div id="guessLog">
@@ -48,8 +51,6 @@
         <ul id="logList"></ul>
     </div>
 
-    <button id="commit">Commit</button>
-    <button id="reset">Reset</button>
 
     <p>Guesses Remaining: <span id="guessesRemaining">5</span></p>
 

@@ -1,37 +1,58 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: Verdana, sans-serif;
+    background-color: #5CDB95;
+    color: #EDF5E1;
 }
+
 
 h1 {
     color: #333;
-    text-size: 30px;
+    font-size: 50px;
+    /* font-family: "Arial Black", sans-serif; */
+    align-items: center;
+    color: #05386B;
 }
 
-h2 {
-    font-size: 20px;
-    padding: 16px;
+
+
+p {
+    font-family: Verdana, sans-serif;
+    color: #EDF5E1;
 }
 
 button {
     margin: 5px;
-    padding: 5px 10px;
+    padding: 5px ;
     font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.15s, color 0.15s;
+    background-color: #EDF5E1;
+    color: #05386B;
+
 }
 
-.buttons {
-    justify-content: space-between;
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    margin-bottom: 20px;
-    
+button:hover {
+    background-color: #05386B;
+    color: #EDF5E1
 }
 
 .add-buttons, .subtract-buttons {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+
+}
+
+#commit-reset {
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    margin-top: 5px;
 }
 
 .add-buttons button, .subtract-buttons button {
