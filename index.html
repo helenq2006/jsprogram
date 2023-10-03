@@ -2,38 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot n Cold</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hot and Cold Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <!--heading-->
-    <h1>Welcome to Hot n Cold!</h1>
-    <h2>Objective: Players get a set amount of turns to "find" a number between 1-100. As the player guesses, 
-        they will be informed of how close they are to the actual number in terms of Hot or Cold.
-        Your guess will start at 50. You have 5 guesses.
+    <h1>Hot and Cold Game</h1>
+    <h2>Objective: You have limited turns to guess a secret number, starting at 50. You will be informed how close you are based on Hot and Cold. 
+        If you get the answer within five guesses, you win. Otherwise, you lose. 
+        <br>
+        You have the option of choosing to add or subtract by 1s, 5s, 10s, and 25s.
+        <br>
+        If you are "Very Hot" and guess incorrectly, the number of guesses remaining will not be subtracted.
     </h2>
 
     <!--display-->
-    <p>Hot and Cold Log:</p>
-    <p>Numbers Already Guessed:</p>
-    <p>Current Guess:</p>
-    <p>Number of Guesses Remaining:</p>
+    <div id="current-guess">
+    <p>Current Guess: <span id="currentGuess">50</span></p>
+    </div>
+
 
     <!--buttons-->
-    <button class="add">Add 1</button>
-    <button class="add">Add 5</button>
-    <button class="add">Add 10</button>
-    <button class="add">Add 25</button>
+    <div class="buttons">
+<div class="column">
+        <div class="add-buttons">
+    <button id="add1">+1</button>
+    <button id="add5">+5</button>
+    <button id="add10">+10</button>
+    <button id="add25">+25</button>
+    </div>
+</div>
+    
+    <div class="column">
+<div class="subtract-buttons">
+    <button id="sub1">-1</button>
+    <button id="sub5">-5</button>
+    <button id="sub10">-10</button>
+    <button id="sub25">-25</button>
+    </div>
+</div>
 
-    <button class="subtract">Subtract 1</button>
-    <button class="subtract">Subtract 5</button>
-    <button class="subtract">Subtract 10</button>
-    <button class="subtract">Subtract 25</button>
+    <!--log-->
+    <div id="guessLog">
+        <h2>Guess Log:</h2>
+        <ul id="logList"></ul>
+    </div>
 
     <button id="commit">Commit</button>
     <button id="reset">Reset</button>
+
+    <p>Guesses Remaining: <span id="guessesRemaining">5</span></p>
 
 
     <script src="script.js"></script>

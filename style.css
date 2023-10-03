@@ -1,0 +1,64 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 16px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.buttons {
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin-bottom: 20px;
+    
+}
+
+.add-buttons, .subtract-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.add-buttons button, .subtract-buttons button {
+    margin: 5px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#current-guess {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+#guessLog {
+    margin-top: 10px;
+    text-align: left;
+    align-items: left;;
+}
+
+#logList {
+    list-style: none;
+    padding: 0;
+}
+
+#logList li {
+    margin: 5px 0;
+}
