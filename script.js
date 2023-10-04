@@ -51,7 +51,7 @@ function check() {
         }
 
         if (remaining === 0) {
-            alert(`Game Over. The number was ${secret}.`);
+            alert(`You Lost. The number was ${secret}.`);
             reset();
         } else {
             guessesRemainingElement.textContent = remaining;

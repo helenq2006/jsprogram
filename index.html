@@ -6,14 +6,18 @@
     <title>Hot and Cold</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <h1>Hot and Cold</h1>
-    <h2>Objective: You have limited turns to guess a secret number, starting at 50. You will be informed how close you are based on Hot and Cold. 
+    <h2>Objective: You have limited turns to guess a secret number, starting at 50. 
+        <br>
+        You will be informed how close you are based on Hot and Cold. 
+        <br>
         If you get the answer within five guesses, you win. Otherwise, you lose. 
         <br>
         You have the option of choosing to add or subtract by 1s, 5s, 10s, and 25s.
         <br>
-        If you are "Very Hot" and guess incorrectly, the number of guesses remaining will not be subtracted.
+        If you are "Very Hot" and guess incorrectly, the guesses remaining will not be subtracted.
     </h2>
 
     <!--display-->
@@ -21,12 +25,15 @@
     <p>Current Guess: <span id="currentGuess">50</span></p>
     </div>
 
+    <p>Guesses Remaining: <span id="guessesRemaining">5</span></p>
+
     <!--buttons-->
 <div id="commit-reset">
     <button id="commit">Commit</button>
     <button id="reset">Reset</button>
 </div>
 
+<div id="space-between">
 
 <div class="column">
         <div class="add-buttons">
@@ -51,8 +58,9 @@
         <ul id="logList"></ul>
     </div>
 
+</div>
+</div>
 
-    <p>Guesses Remaining: <span id="guessesRemaining">5</span></p>
 
 
     <script src="script.js"></script>

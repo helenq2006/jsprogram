@@ -1,62 +1,64 @@
 body {
-    text-align: center;
-    font-family: Verdana, sans-serif;
-    background-color: #5CDB95;
-    color: #EDF5E1;
+    text-align: center; /* aligns body text */
+    font-family: Verdana, sans-serif; /* changes font */
+    background-color: #5CDB95; /* changes bckgrnd color */
+    color: #EDF5E1; /* changes text color */
 }
 
 
 h1 {
-    color: #333;
-    font-size: 50px;
-    /* font-family: "Arial Black", sans-serif; */
-    align-items: center;
-    color: #05386B;
+    font-size: 50px; /* changes font size*/
+    font-family: "Arial Black", sans-serif; /* changes font */
+    align-items: center; /* aligns h1 */
+    color: #05386B; /* changes h1 color */
+}
+
+h2 {
+    font-size: 18px; /* changes font size */
 }
 
 
 
 p {
-    font-family: Verdana, sans-serif;
-    color: #EDF5E1;
+    font-family: Verdana, sans-serif; /* changes font */
+    color: #EDF5E1; /* changes text color */
 }
 
 button {
-    margin: 5px;
-    padding: 5px ;
-    font-size: 16px;
-    font-family: Verdana, sans-serif;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    border-radius: 10px;
-    border: none;
-    transition: background-color 0.15s, color 0.15s;
-    background-color: #EDF5E1;
-    color: #05386B;
+    padding: 8px ; /* changes button thickness */
+    font-size: 16px; /* changes font size */
+    font-family: Verdana, sans-serif; /* changes font */
+    margin-bottom: 10px; /* changes bottom margin */
+    margin-left: 10px; /* changes left margin */
+    border-radius: 10px; /* rounds out button */
+    border: none; /* deletes button border*/
+    transition: background-color 0.15s, color 0.15s; /* changes color transition when hovered */
+    background-color: #EDF5E1; /* bckgrnd color */
+    color: #05386B; /* text color */
 
 }
 
 button:hover {
-    background-color: #05386B;
-    color: #EDF5E1
+    background-color: #05386B; /* button color when hovered */
+    color: #EDF5E1; /* text color when hovered */
 }
 
 .add-buttons, .subtract-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: flex; /* makes buttons vertical*/
+    flex-direction: column; /*aligns buttons*/
+    align-items: flex-start; /* keeps button width */
 
-}
-
-#commit-reset {
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    margin-top: 5px;
 }
 
 .add-buttons button, .subtract-buttons button {
-    margin: 5px;
+    margin: 5px; /* changes how far apart the buttons are from eachother */
+}
+
+#commit-reset {
+    align-items: center; /*aligns buttons*/
+    text-align: center; /*aligns text*/
+    flex-direction: row; /* makes buttons horizontal*/
+    margin-top: 5px;
 }
 
 .column {
@@ -65,21 +67,26 @@ button:hover {
 }
 
 #current-guess {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: none;
+
 }
 
 #guessLog {
     margin-top: 10px;
-    text-align: left;
-    align-items: left;;
+    text-align: right;
+    align-items: right;
+}
+
+#space-between {
+    display: flex;
 }
 
 #logList {
     list-style: none;
-    padding: 0;
+    padding: 1;
 }
 
 #logList li {
-    margin: 5px 0;
+    margin: 8px 5;
 }
