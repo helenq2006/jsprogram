@@ -80,6 +80,8 @@ button:hover {
 
 #space-between {
     display: flex;
+    border: 1px;
+    border-color: red;
 }
 
 #logList {
@@ -89,4 +91,18 @@ button:hover {
 
 #logList li {
     margin: 8px 5;
+}
+
+.flexBoxTest
+{
+    display: flex;
+    justify-content: center;
+    margin-left: 350px;
+}
+
+.flexBoxTest2
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 300px;
 }
