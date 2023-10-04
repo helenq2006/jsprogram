@@ -25,21 +25,21 @@ function check() {
     const difference = Math.abs(secret - currentGuess);
 
     if (difference <= 5) {
-        updateLog(currentGuess, "Very Hot");
+        updateLog(currentGuess, "Very Hot!!!!");
     } else if (difference <= 8) {
-        updateLog(currentGuess, "Hot");
+        updateLog(currentGuess, "Hot!!!");
     } else if (difference <= 15) {
-        updateLog(currentGuess, "Very Warm");
+        updateLog(currentGuess, "Very Warm!!");
     } else if (difference <= 20) {
-        updateLog(currentGuess, "Warm");
+        updateLog(currentGuess, "Warm!");
     } else if (difference <= 30) {
-        updateLog(currentGuess, "Cool");
+        updateLog(currentGuess, "Cool.");
     } else if (difference <= 40) {
-        updateLog(currentGuess, "Very Cool");
+        updateLog(currentGuess, "Very Cool..");
     } else if (difference <= 55) {
-        updateLog(currentGuess, "Cold");
+        updateLog(currentGuess, "Cold...");
     } else {
-        updateLog(currentGuess, "Very Cold");
+        updateLog(currentGuess, "Very Cold....");
     }
 
     if (secret === currentGuess) {
