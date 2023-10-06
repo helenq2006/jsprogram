@@ -74,8 +74,8 @@ button:hover {
 
 #guessLog {
     margin-top: 10px;
-    text-align: right;
-    align-items: right;
+    text-align: left;
+    align-items: left;
 }
 
 #space-between {
@@ -93,16 +93,3 @@ button:hover {
     margin: 8px 5;
 }
 
-.flexBoxTest
-{
-    display: flex;
-    justify-content: center;
-    margin-left: 350px;
-}
-
-.flexBoxTest2
-{
-    display: flex;
-    justify-content: center;
-    margin-right: 300px;
-}
